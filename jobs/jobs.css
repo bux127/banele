@@ -1,0 +1,625 @@
+@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Vujahday+Script&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Bree Serif";
+}
+
+nav {
+  background: #112e42;
+  color: #00abf0;
+  padding: 15px 50px;
+}
+
+.navTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.maneuItem {
+  margin-right: 3.125rem;
+  cursor: pointer;
+  color: white;
+}
+
+.navItem span {
+  color: #00abf0;
+}
+
+.searchInput {
+  border: none;
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: #00abf0;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderWrapper {
+  display: flex;
+  width: 400vw;
+  transition: all 1s ease-in-out;
+}
+
+.sliderItem {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sliderTitle {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: transparent;
+  -webkit-text-stroke: 0.7px white;
+  background-image: linear-gradient #00abf0, #00abf0;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: play 6s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes play {
+  0%,
+  10%,
+  100% {
+    background-position: -33rem 0;
+  }
+
+  65%,
+  85% {
+    background-position: 0 0;
+  }
+}
+
+.sliderTitle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+}
+
+.price {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #081b29;
+  font-family: "Vujahday Script";
+  border-bottom: 2px solid green;
+}
+
+.sliderImg {
+  width: 1360px;
+  height: 900px;
+}
+
+.orderButton {
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  font-size: 15px;
+  font-weight: 800;
+  color: white;
+  background-color: #e11d48;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 8px;
+  box-shadow: 0 10px 20px rgba(225, 29, 79, 0.5),
+    0 6px 6px rgba(225, 29, 79, 0.5), 0 0 100px -10px #e11d48;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.featureImg {
+  width: 50px;
+  height: 50px;
+}
+
+.featureTitle {
+  font-style: 20px;
+  font-weight: 600;
+  margin: 15px;
+}
+
+.featureDesc {
+  color: grey;
+  height: 100px;
+  width: 35ch;
+}
+
+.product {
+  height: 100vh;
+  background-image: url(images/bg2.jpg);
+  position: relative;
+}
+.productImg {
+  width: 50%;
+  height: 100%;
+}
+
+.productDetails {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 40%;
+  padding: 50px;
+}
+
+.productTitle {
+  font-size: 75px;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 0.7px white;
+}
+
+.productPrice {
+  color: white;
+  font-weight: 200;
+}
+
+.prodDesc {
+  font-size: 20px;
+  color: white;
+}
+
+.colors,
+.types {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.galleryItem img:hover {
+  scale: 1.1;
+  z-index: 1;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #081b29;
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.625rem;
+}
+
+.type {
+  padding: 5px 20px;
+  margin-right: 10px;
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  border: 1px solid #00abf0;
+}
+
+.prodBut {
+  float: right;
+  padding: 10px 20px;
+  background-color: #e11d48;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(225, 29, 79, 0.5),
+    0 6px 6px rgba(225, 29, 79, 0.5), 0 0 100px -10px #e11d48;
+}
+
+.payment {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(225, 29, 79, 0.5),
+    0 6px 6px rgba(225, 29, 79, 0.5), 0 0 100px -10px #e11d48;
+}
+
+.payTitle {
+  font-size: 25px;
+  color: purple;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.payInput {
+  padding: 10px;
+  margin: 10px 0px;
+  border: 0.2px solid aqua;
+}
+
+.cardIcons {
+  display: flex;
+}
+
+.cardImg {
+  margin-right: 10px;
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.sm {
+  width: 30%;
+}
+
+.paybutton {
+  position: absolute;
+  height: 40px;
+  bottom: -40px;
+  width: 100%;
+  left: 0;
+  color: white;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.gallery {
+  padding: 50px;
+  display: flex;
+  background-image: url(images/gallery.jpg);
+}
+
+.galleryItem {
+  flex: 1;
+  padding: 20px;
+}
+
+.galleryImg {
+  width: 100%;
+  height: 500px;
+}
+
+.galleryTitle {
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Vujahday Script";
+}
+
+.newSeason {
+  display: flex;
+}
+
+.nsItem {
+  flex: 1;
+  background-color: black;
+  color: #00abf0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nsImg {
+  width: 100%;
+  height: 100%;
+}
+
+.nsTitle {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.nsButton {
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  background-color: #e11d48;
+  margin-top: 10px;
+  box-shadow: 0 10px 20px rgba(225, 29, 79, 0.5),
+    0 6px 6px rgba(225, 29, 79, 0.5), 0 0 100px -10px #e11d48;
+}
+
+footer {
+  display: flex;
+  background-image: url(images/footer.jpg);
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.fTitle {
+  font-size: 16px;
+}
+
+.fList {
+  padding: 0;
+  list-style: none;
+}
+
+.flistItem {
+  margin: 10px 0;
+  color: purple;
+  cursor: pointer;
+}
+
+.footerRight {
+  display: flex;
+  flex: 1;
+  padding: 50px;
+  justify-content: center;
+}
+
+.frMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.ficons {
+  display: flex;
+}
+
+.ficon {
+  font-size: 25px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding: 20px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .maneuItem {
+    margin: 20px;
+    font-weight: 700;
+    font-style: 20px;
+  }
+
+  .navBottom {
+    flex-wrap: wrap;
+  }
+
+  .sliderImg {
+    width: 90%;
+  }
+
+  .sliderTitle {
+    display: none;
+  }
+
+  .price {
+    right: 6%;
+    left: unset;
+  }
+
+  .orderButton {
+    right: unset;
+    left: 50%;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .product {
+    display: flex;
+    font-display: column;
+    align-items: center;
+  }
+
+  .productImg {
+    width: 100%;
+  }
+
+  .productDetails {
+    width: 100%;
+    right: unset;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .productPrice,
+  .prodDesc {
+    color: #00abf0;
+  }
+  .productTitle {
+    font-size: 50px;
+    color: #081b29;
+  }
+
+  .gallery {
+    display: none;
+  }
+
+  .newSeason {
+    flex-direction: column;
+  }
+
+  .nsItem:nth-child(2) {
+    padding: 50px;
+  }
+
+  .nsTitle {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .payment {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 950px) {
+  .maneuItem {
+    margin: 20px;
+    font-weight: 700;
+    font-style: 20px;
+  }
+
+  .sliderImg {
+    width: 100%;
+  }
+
+  .sliderTitle {
+    font-size: 40px;
+  }
+
+  .price {
+    color: purple;
+  }
+
+  .orderButton {
+    right: unset;
+    left: 50%;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-image: url(images/bg2.jpg);
+  }
+
+  .product {
+    display: flex;
+    font-display: column;
+    align-items: center;
+  }
+
+  .productImg {
+    width: 100%;
+  }
+
+  .productDetails {
+    width: 100%;
+    right: unset;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .productPrice,
+  .prodDesc {
+    color: #081b29;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .productTitle {
+    font-size: 50px;
+    color: #081b29;
+  }
+
+  .galleryImg {
+    height: 300px;
+  }
+
+  .nsItem:nth-child(2) {
+    padding: 50px;
+  }
+
+  .nsTitle {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+
+  .featureTitle {
+    font-style: 15px;
+    font-weight: 400;
+    margin: 15px;
+    color: #00abf0;
+  }
+
+  .featureDesc {
+    color: white;
+    height: 100px;
+    width: 35ch;
+    font-size: 17px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  font-family: system-ui;
+}
+
+button {
+  cursor: pointer;
+}
+
+.navBar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: fixed;
+  z-index: 900;
+}
+
+.logo {
+  font-family: system-ui;
+  font-style: 30px;
+  color: goldenrod;
+}
+
+.navBar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: #00abf0;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.list-item {
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+.list-item.active {
+  font-weight: bold;
+}
+
+.menu-container {
+  flex: 6;
+}
+
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-txt-cont {
+  margin: 0 20px;
+}
+
+.profile-pic {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.toggle-icons {
+  color: #00abf0;
+}
+
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #081b29;
+  position: absolute;
+  right: 0;
+  transition: all 1s ease;
+}
+.sideBar {
+  height: 100%;
+  width: 50px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  align-items: center;
+}
+
+.side-icon {
+  color: #00abf0;
+  margin-bottom: 40px;
+}
+
+.container {
+  background: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.featured-content {
+  height: 60vh;
+  padding: 50px;
+}
+
+.featured-title {
+  width: 400px;
+}
+
+.featured-description {
+  width: 50ch;
+  margin: 20px 0;
+}
+
+.featured-btn {
+  background-color: #00abf0;
+  color: #081b29;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 800;
+  border: none;
+  outline: none;
+}
+
+.music-title {
+  color: goldenrod;
+}
+
+.music-collection {
+  padding: 0 20px;
+}
+
+.music-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.music-img {
+  transition: all 1s ease-in-out;
+  width: 200px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.music-list {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  height: 300px;
+  transform: translateX(0); /*to cater for js transition*/
+  transition: all 1s ease-in-out;
+}
+
+.music-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.music-item:hover .music-img {
+  scale: 1.1;
+  opacity: 0.5;
+}
+
+.music-item:hover .music-item-title,
+.music-item:hover .music-item-desc,
+.music-item:hover .music-item-btn {
+  opacity: 1;
+}
+
+.music-item-title {
+  background-color: rgba(17, 46, 66, 0.5);
+  padding: 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 10%;
+  left: 5px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.music-item-desc {
+  background-color: rgba(17, 46, 66, 0.8);
+  padding: 0 10px;
+  position: absolute;
+  top: 25%;
+  left: 5px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.music-item-btn {
+  position: absolute;
+  padding: 5px 10px;
+  left: 5px;
+  top: 60%;
+  color: #081b29;
+  background-color: #00abf0;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.arrow {
+  font-size: 50px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  color: #00abf0;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container.active {
+  background-color: #112e42;
+}
+
+.sideBar.active {
+  background-color: #081b29;
+}
+
+.navBar.active {
+  background-color: #081b29;
+}
+
+.toggle.active {
+  background-color: goldenrod;
+}
+
+.toggle-ball.active {
+  color: #112e42;
+  transform: translateX(-20px);
+}
+
+@media (max-width: 900px) {
+  .menu-container {
+    display: none;
+  }
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="aspire.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="header">
+        <img src="images/aspire.jpg" alt="" class="logo" />
+        <div>
+            <ul id="navbar">
+                <a href="#" id="close"><i class="fa fa-times"></i></a>
+            <li><a href="aspire.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a  href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+            <a class="active" href="cart.html"><i class="fa fa-shopping-bag bag"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+        <i id="menu" class="fas fa-outdent"></i>
+    </div>
+    </section>
+
+    <section id="shopbn" class="cart">
+        <h2>#place your order!</h2>
+
+        <p>Have a decent shopping experience!</p>
+        </section>
+
+    <section id="cart" class="section-p">
+        <table width="100%">
+            <thead> <!--table row-->
+                <td>Remove</td> <!--table data-->
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/glasses.jpg" alt=""></td>
+                    <td>Safety Glasses</td>
+                    <td>E200</td>
+                    <td><input type="number" value="1"></td>
+                    <td>E200</td>
+            </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/safetycloth.jpg" alt=""></td>
+                    <td>Safety Clothing</td>
+                    <td>E700</td>
+                    <td><input type="number" value="1"></td>
+                    <td>E700</td>
+            </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/apparel.png" alt=""></td>
+                    <td>Branded Apparel</td>
+                    <td>E300</td>
+                    <td><input type="number" value="1"></td>
+                    <td>E300</td>
+            </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/corporate.webp" alt=""></td>
+                    <td>Corporate gifts</td>
+                    <td>E400</td>
+                    <td><input type="number" value="1"></td>
+                    <td>E400</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="cart-add" >
+        <div class="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+        
+            <tr>
+            <td>Cart Subtotal</td>
+            <td>E 800</td>
+        </tr>
+        <tr>
+            <td>Delivery</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>E 800</strong></td>
+        </tr>
+
+    </table>
+    <button class="button">Make Order</button>
+        </div>
+    </section>
+    
+    <footer class="section-p">
+      <div class="col">
+        <img src="images/aspire.jpg" alt="" width="80" height="60" />
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Sidwashini, Industrial Site, Swaziland</p>
+        <p><strong>Phone:</strong> +268 7802 5491</p>
+        <p><strong>Hours:</strong> 08.00 - 17.00 GMT</p>
+      </div>
+
+      <div class="col">
+        <h4>About us</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f fb"></i>
+            <i class="fab fa-twitter tw"></i>
+            <i class="fab fa-instagram in"></i>
+            <i class="fab fa-youtube you"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

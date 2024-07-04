@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="slider.css" />
+  </head>
+
+  <body>
+    <div class="container2">
+      <div class="slide">
+        <div
+          class="item"
+          style="background-image: url(/images/pexels-pixabay-38238.jpg)"
+        >
+          <div class="content2">
+            <div class="name">First</div>
+            <div class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi,
+              corporis.
+            </div>
+            <button>Explore</button>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background-image: url(/images/max-pruvost-OJ02cQHePds-unsplash.jpg);
+          "
+        >
+          <div class="content2">
+            <div class="name">Second</div>
+            <div class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi,
+              corporis.
+            </div>
+            <button>Explore</button>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(/images/sibebe-resort.webp)"
+        >
+          <div class="content2">
+            <div class="name">Third</div>
+            <div class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi,
+              corporis.
+            </div>
+            <button>Explore</button>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background-image: url(/images/artem-zhukov-XKZ6o1jgBdk-unsplash.jpg);
+          "
+        >
+          <div class="content2">
+            <div class="name">Fourth</div>
+            <div class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi,
+              corporis.
+            </div>
+            <button>Explore</button>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="background-image: url(/images/zen\ garden.png)"
+        >
+          <div class="content2">
+            <div class="name">Fifth</div>
+            <div class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi,
+              corporis.
+            </div>
+            <button>Explore</button>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <button class="prev">👈</button>
+        <button class="next">👉</button>
+      </div>
+    </div>
+    <script>
+      let next = document.querySelector(".next");
+      let prev = document.querySelector(".prev");
+
+      next.addEventListener("click", () => {
+        let items = document.querySelectorAll(".item");
+        document.querySelector(".slide").appendChild(items[0]);
+      });
+
+      prev.addEventListener("click", () => {
+        let items = document.querySelectorAll(".item");
+        document.querySelector(".slide").prepend(items[items.length - 1]);
+      });
+    </script>
+  </body>
+</html>
