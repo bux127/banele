@@ -674,7 +674,8 @@ button {
       "content2 image2"
       "image3 content3"
       "content4 image4"
-      "image5 content5";
+      "image5 content5"
+      "content6 image6";
     place-items: center; /*justify + align shorthand*/
   }
 
@@ -693,6 +694,9 @@ button {
   .image5 {
     grid-area: image5;
   }
+  .image6 {
+    grid-area: image6;
+  }
 
   .content1 {
     grid-area: content1;
@@ -708,6 +712,9 @@ button {
   }
   .content5 {
     grid-area: content5;
+  }
+  .content6 {
+    grid-area: content6;
   }
 
   .work_h3 {
