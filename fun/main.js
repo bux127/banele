@@ -38,4 +38,33 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 20,
     }
     },
-  });
+});
+
+const menu = document.querySelector('#nav-open');
+const close = document.querySelector('#nav-close');
+const nav = document.querySelector('.nav-links');
+
+menu.addEventListener('click', () => {
+nav.style.display = 'flex';
+menu.style.display = 'none'
+close.style.display = 'inline-block';
+})
+
+
+close.addEventListener('click', () => {
+    nav.style.display = 'none';
+    menu.style.display = 'inline-block'
+    close.style.display = 'none';
+    })
+
+    if(document.body.clientWidth < 1024) {
+    nav.querySelectorAll('li a').forEach(navLink => {
+        navLink.addEventListener('click', () => {
+            nav.style.display = 'none';
+            menu.style.display = 'inline-block'
+            close.style.display = 'none';
+        })
+    })
+    
+}
+    
