@@ -636,14 +636,7 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  .skills_div {
-    flex-direction: column;
-  }
-
-  .resume_h2 {
-    text-align: center;
-  }
-  
+ 
 }
 
 @media (min-width: 700px) {
