@@ -81,3 +81,5 @@ function displayBlogs(articles){
         console.error("Error fetching info", error)
     }
 })();
+
+//end
