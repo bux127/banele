@@ -1,153 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
-    <link rel="stylesheet" href="banele/prof.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header class="header container">
-      <h3>Banele.</h3>
-      <nav>
-        <ul class="header__menu">
-          <li><a class="header_link" href="#about">About</a></li>
-          <li><a class="header_link" href="#work">Work</a></li>
-          <li><a class="header_link" href="#contact">Contact</a></li>
-          <li class="line"></li>
-          <li>
-            <button id="theme" class="header_sun">
-              <i class="bx bxs-sun"></i>
-            </button>
-          </li>
-          <li>
-            <a href="banele/resume.html" class="resume btn">CV</a>
-          </li>
-        </ul>
-        <button class="header_menu"><i class="bx bx-menu"></i></button>
-      </nav>
-    </header>
-
-    <!--mobile nav-->
-    <div class="mobile_nav">
-      <nav>
-        <ul class="mobile_menu">
-          <li><a class="mobile_link" href="#about">About</a></li>
-          <li><a class="mobile_link" href="#work">Work</a></li>
-          <li><a class="mobile_link" href="#contact">Contact</a></li>
-          <li class="mobile_link_line"></li>
-          <li class="mobile_link">
-            <button id="theme" class="mobile_sun">
-              <i class="bx bxs-sun"></i>
-            </button>
-          </li>
-          <li class="mobile_link">
-            <a class="mobile_nav_btn btn" href="banele/resume.html">CV</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <main>
-      <section class="hero container">
-        <img class="hero_img" src="banele/images/prof.webp" alt="" />
-        <h2 class="hero_h2">Hi, I'm Banele👋</h2>
-        <h1 class="hero_h1">
-          COMPUTER <br />
-          PROGRAMMER
-        </h1>
-        <p class="hero_p">
-          A passionate <strong>Backend, Frontend / Web designer</strong> and
-          <strong>Web developer</strong> who is an enthusiast in building
-          pixel-perfect interactive websites
-        </p>
-        <a class="hero_btn btn" href="">Reach out</a>
-      </section>
-      <section id="about" class="about container section">
-        <div class="about_content">
-          <h2 class="about_h2">About</h2>
-          <p class="about_p">
-            Hello there, i'm Banele Innocent Makhanya, an online student at
-            <a href="https://byui.edu">Brigham Young University</a> currently
-            studying for a <strong>Bachelors Degree</strong> in
-            <strong>Applied Technology</strong>. It is a
-            <strong>Full Stack</strong> developer course that consists
-            <strong>Web Frontend, Web Development and Computer Programming.</strong
-            >
-          </p>
-          <p class="about_p">
-            I am taking <strong>Python & Javascript</strong> as my backend language, which has obsessed me
-            since I am driven and love learning new things.
-          </p>
-          <p class="about_p">
-            I currently hold a <strong>Diploma</strong> in
-            <strong>Computer programming</strong>, and due for an Advanced
-            Diploma in December 2024, and a Bachelors Degree in December 2025
-          </p>
-          <hr class="about_hr" />
-          <h3 class="about_h3">Technologies</h3>
-          <div class="li_container">
-            <ul class="about_ul">
-              <li class="about_li">Python</li>
-              <li class="about_li">CSS</li>
-              <li class="about_li">HTML</li>
-              <li class="about_li">Javascript</li>
-            </ul>
-            <ul class="about_ul">
-              <li class="about_li">Photoshop</li>
-              <li class="about_li">Illustrator</li>
-              <li class="about_li">In-Design</li>
-            </ul>
-          </div>
-        </div>
-        <div class="about_wrapper">
-          <div class="header-image-bg"></div>
-            <div class="header-image-lg">
-                <img src="banele/images/about.jpg" alt="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="banele/landing.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head-left">
+                <img src="banele/images/slide.png" alt="">
+                <h2>BANELE</h2>
             </div>
-            <div class="header-image-sm">
-                <img src="banele/images/about.jpg" alt="">
-            </div>
-        </div>
-      </section>
-      <section id="featured" class="featured container section">
-        <div class="featured_wrapper">
-          <h3 class="featured_h3">Featured Projects</h3>
-          <a class="featured_link" href=""
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
-              />
-            </svg>
-          </a>
-        </div>
 
+            <ul>
+               
+                <li><a href="banele/projects.html">Projects</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="banele/qualifications.html">Qualifications</a></li>
+            </ul>
+
+            <div class="head-right">
+                🔗
+                <div class="button-box">
+                    <button><a href="banele/resume.html">C.V.</a></button>
+                </div>    
+            </div>
+            
+        </header>
+        <section class="hero">
+            <img class="hero-nature parallax" data-speed="2" src="banele/images/nature.jpg" alt="">
+            <img class="hero-rings parallax" data-speed="3" src="banele/images/baloon.jpg" alt="" loading="lazy">
         
-        <p class="featured_p">
-          Preview of projects in profile.
-        </p>
+            <h2>Banele Makhanya __Computer Programmer</h2>
+            <h3>Hello there, i'm Banele Innocent Makhanya, an online student at
+                <a href="https://byui.edu">Brigham Young University</a> currently
+                studying for a <strong>Bachelors Degree</strong> in
+                <strong>Computer Science</strong>, a
+                <strong>Full Stack</strong> developer course that consists
+                <strong>Web Frontend, Web Development and Computer Programming.</strong
+                >
+            </h3>
+
+            <div class="image-box">
+                <div class="profile">
+                    <div class="profile-header"></div>
+                    <img src="banele/images/about.jpg" alt="">
+                </div>
+
+                <div class="element1">
+                    <img src="banele/images/slide9.png" alt="">
+                </div>
+                <div class="element2">
+                    <img src="banele/images/slide12.png" alt="">
+                </div>
+                <div class="element3">
+                    <img src="banele/images/slide10.png" alt="">
+                </div>
+                <div class="element4">
+                    <img src="banele/images/slide11.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
 
         <div class="slider" reverse="true" style="
-          --width: 80px;
-          --height: 80px;
+          --width: 50px;
+          --height: 50px;
           --quantity: 13">
 
           <div class="list">
@@ -169,8 +91,8 @@
         <br>
         <br>
         <div class="slider" style="
-          --width: 200px;
-          --height: 200px;
+          --width: 100px;
+          --height: 100px;
           --quantity: 6">
           <div class="list">
             <div class="item" style="--position: 1"><img src="banele/images/showcas.PNG" alt=""></div>
@@ -181,219 +103,17 @@
             <div class="item" style="--position: 6"><img src="banele/images/aspire.PNG" alt=""></div>
           </div>
         </div>
-      
-      </section>
-      <section id="work" class="work container section">
-        <h2 class="work_h2">Projects</h2>
-        <p class="work_p">
-          Thses are projects i completed and some i had to acquire assistance
-          from a professional to boost my learning experience.
-        </p>
-        <div class="work_container">
-          <h3 class="work_h3">Search Engine</h3>
-          <div class="work_wrapper image1">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/720"
-              data-src="news/images/search.JPG"
-              alt="img"
-            />
-          </div>
-          <div class="work_project content1">
-            <h3 class="work_sub">Search website</h3>
-            <p class="work_p1">
-              This is a search engine that functions like google
-            </p>
-            <p class="work_p2">
-              Any information entered on search input will be returned with different cards that are clickable to be refered to web page.
-            </p>
-            <a class="btn work_btn" href="news/articles.html">Visit site</a>
-          </div>
-          <h3 class="work_h3">Travel website</h3>
-          <div class="work_wrapper image1">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/720"
-              data-src="banele/images/showcas.PNG"
-              alt=""
-            />
-          </div>
-          <div class="work_project content1">
-            <h3 class="work_sub">Showcase website</h3>
-            <p class="work_p1">
-              This is a travel guide website for visitors and anyone interested
-              to visit Swaziland
-            </p>
-            <p class="work_p2">
-              It shows different places and their respective rates using a
-              swiper display that has effects on each image and animation to
-              `provide a great contrast.
-            </p>
-            <a class="btn work_btn" href="swazi/visit.html">Visit site</a>
-          </div>
+    </div>
 
-          <h3 class="work_h3">Promotion website</h3>
-          <div class="work_wrapper image2">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/720"
-              data-src="banele/images/6th.PNG"
-              alt=""
-            />
-          </div>
-          <div class="work_project content2">
-            <h3 class="work_sub">Promotion Website</h3>
-            <p class="work_p1">
-              This website is created to showcase and advertise a plumbing
-              service and show modern designs.
-            </p>
-            <p class="work_p2">
-              The navigation links to each of the provided services, and when
-              you click on the navigation the site has to display information
-              relevant to the chosen service
-            </p>
-            <a class="btn work_btn" href="jobs/jobs.html">Visit site</a>
-          </div>
-
-          <h3 class="work_h3">Tunes Website</h3>
-          <div class="work_wrapper image3">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/720"
-              data-src="banele/images/music.PNG"
-              alt=""
-            />
-          </div>
-          <div class="work_project content3">
-            <h3 class="work_sub">Music</h3>
-            <p class="work_p1">
-              Music websiteis more like a YouTube site, allowing you to browse
-              and play songs according to your likes.
-            </p>
-            <p class="work_p2">
-              This site has been created to have songs hidden after maximum
-              screen width and they can be revealed by clicking the foward
-              button by the edge of the screen.
-            </p>
-            <a class="btn work_btn" href="project/project.html">Visit site</a>
-          </div>
-
-          <h3 class="work_h3">Music Player</h3>
-          <div class="work_wrapper image4">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/720"
-              data-src="banele/images/play.PNG"
-              alt=""
-            />
-          </div>
-          <div class="work_project content4">
-            <h3 class="work_sub">Music Player</h3>
-            <p class="work_p1">
-              Mp3 player is a demo player created to play songs.
-            </p>
-            <p class="work_p2">
-              It functions more like any other player only with different
-              features.
-            </p>
-            <a class="btn work_btn" href="player/player.html">Visit site</a>
-          </div>
-
-          <h3 class="work_h3">Club Website</h3>
-          <div class="work_wrapper image5">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/720"
-              data-src="fun/images/club.PNG"
-              alt=""
-            />
-          </div>
-          <div class="work_project content5">
-            <h3 class="work_sub">Club Website</h3>
-            <p class="work_p1">
-              Mp3 player is a demo player created to play songs.
-            </p>
-            <p class="work_p2">
-              It functions more like any other player only with different
-              features.
-            </p>
-            <a class="btn work_btn" href="fun/fun.html">Visit site</a>
-          </div>
-
-          <h3 class="work_h3">Business Website</h3>
-          <div class="work_wrapper image6">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/720"
-              data-src="banele/images/aspire.PNG"
-              alt=""
-            />
-          </div>
-          <div class="work_project content6">
-            <h3 class="work_sub">Business Website</h3>
-            <p class="work_p1">
-              This business website presnts numerous services provided by aspire 360.
-            </p>
-            <p class="work_p2">
-              It is responsive for different screen sizes and contains great features for client capture.
-            </p>
-            <a class="btn work_btn" href="website/aspire.html">Visit site</a>
-          </div>
-
-          <h3 class="work_h3">Facebook Demo</h3>
-          <div class="work_wrapper image6">
-            <img
-              class="lazy loading"
-              src="https://fakeimg.pl/720"
-              data-src="facebook/images/fb-prof.JPG"
-              alt=""
-            />
-          </div>
-          <div class="work_project content6">
-            <h3 class="work_sub">Facebook Page</h3>
-            <p class="work_p1">
-              This website demonstrates facebook structure. 
-            </p>
-            <p class="work_p2">
-              Messages, theme, notifications and search all respond to clicks. 
-            </p>
-            <a class="btn work_btn" href="facebook/fb.html">Visit site</a>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="contact container section">
-        <h2 class="contact_h2">Get In Contact</h2>
-        <p class="contact_p">
-          Open for employment, enquiries or any relevant issues, my inbox is
-          always open so enjoy the comfort of reaching out and i will reply as
-          soon as possible.
-        </p>
-
-        <a
-          href="mailto:bmakhanya424@gmail.com"
-          target="_blank"
-          class="contact_btn btn"
-          >Reach out</a
-        >
-      </section>
-    </main>
     <footer class="footer container section">
-      <div class="footer_div">
-        <h3 class="footer_h3">💻Banele Innocent Makhanya</h3>
-        <div class="social">
-          <div>
-            <a href="https://www.linkedin.com/in/banele-m-3b2b5b1a9"
-              ><i class="bx bxl-linkedin-square"></i
-            ></a>
-          </div>
-          <div>
-            <a href="mailto:bmakhanya424@gmail.com"
-              ><i class="bx bx-mail-send"></i
-            ></a>
+        <div class="footer_div">
+          <h3 class="footer_h3">💻Banele Innocent Makhanya</h3>
+          <div class="social">
+            <div><i class="bx bxl-linkedin-square"></i></div>
+            <div><i class="bx bx-mail-send"></i></div>
           </div>
         </div>
-      </div>
-    </footer>
-    <script src="banele/prof.js"></script>
-  </body>
+      </footer>
+    <script src="banele/landing.js"></script>
+</body>
 </html>

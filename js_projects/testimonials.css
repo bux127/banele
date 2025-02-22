@@ -1,0 +1,57 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.test_container {
+    width: 60vw;
+    margin: 0 auto;
+}
+
+/*class from js*/
+.testimonial-card {
+    padding: 1rem;
+    box-shadow: 0 0 16px 8px rgba(0, 0, 0, .4);
+    width: 100;
+    line-height: 1.2;
+    border-radius: .5rem;
+}
+
+.testimonial-card img {
+    border-radius: 50%;
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block; /*allows margin auto to function*/
+    overflow: hidden;
+}
+
+.testimonial-card h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.testimonial-card date {
+    text-align: end;
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+nav button {
+    background-color: #7bc5ae;
+    border: 0;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    color: white;
+}
+
+nav button:hover {
+    background-color: #028c6a;
+}
