@@ -416,5 +416,21 @@ header a:hover {
     .image-box {
         height: 300px;
     }
+
+    .hero .element1 {
+        width: 40px;
+        left: 12%
+    }
+    .hero .element2 {
+        width: 40px;
+        right: 12%;
+
+    }
+    .hero .element3 {
+        width: 40px;
+    }
+    .hero .element4 {
+        width: 40px;
+    }
   }
   
