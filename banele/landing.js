@@ -1,12 +1,3 @@
-document.addEventListener('mousemove', (event) => {
-    const x = event.clientX / window.innerWidth - .5;
-    const y = event.clientY / window.innerHeight - .5;
-
-    document.querySelectorAll('.parallax').forEach((element) => {
-        const speed = element.getAttribute("data-speed");
-        element.style.transform = `translate(${x * speed * 10}px, ${y * speed * 10}px)`
-    })
-})
 
 const headerBtn = document.querySelector(".header_menu");
 const mobileNav = document.querySelector(".mobile_nav");
